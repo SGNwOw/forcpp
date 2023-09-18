@@ -1,9 +1,9 @@
 .vs
 *.exe
+*.vcxproj.filters
+*.vcxproj.user
+*.vcxproj
 *.pdb
 *.log
 x64
 Debug
-*.vcxproj.filters
-*.vcxproj.user
-*.vcxproj
