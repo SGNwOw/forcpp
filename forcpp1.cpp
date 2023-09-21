@@ -488,4 +488,5 @@ double f18(int a, int n) {
 	 //std::cout << wh15(3);
 	 //std::cout << wh8(5);
 	 //std::cout << wh10(5);
+	 //
  }
