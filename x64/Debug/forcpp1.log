@@ -1,15 +1,15 @@
 ﻿  forcpp1.cpp
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(65,13): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(112,10): warning C4244: *=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(128,13): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(136,31): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(136,55): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(152,15): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(176,39): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(176,73): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(208,53): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(216,56): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(253,14): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(261,14): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(269,14): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(66,13): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(113,10): warning C4244: *=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(129,13): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(137,31): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(137,55): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(153,15): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(177,39): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(177,73): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(209,53): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(217,51): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(278,14): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(286,14): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pavli\source\repos\forcpp1\forcpp1\forcpp1.cpp(294,14): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
   forcpp1.vcxproj -> C:\Users\pavli\source\repos\forcpp1\x64\Debug\forcpp1.exe

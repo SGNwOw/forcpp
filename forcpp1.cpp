@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <math.h>
+#include<memory>
 void f1(int n, int k) {
 	for (int i = 0; i < n; i++)
 	{
@@ -137,19 +138,19 @@ double f18(int a, int n) {
 	}
 	return 1- res;
 }
- /*f19*/double fact(int value) {
+ /*f19*/double Fact(int value) {
 	if (value == 0 || value == 1) {
 		return 1;
 	}
 	{
-		return value * fact(value - 1);
+		return value * Fact(value - 1);
 	}
 }
  int f20(int n) {
 	 int res = 0;
 	 for (int i = 1; i <= n; i++)
 	 {
-		 res += fact(i);
+		 res += Fact(i);
 	 }
 	 return res;
  }
@@ -157,7 +158,7 @@ double f18(int a, int n) {
 	 double res = 1;
 	 for (int i = 1; i <=n; i++)
 	 {
-		 res += 1 / fact(i);
+		 res += 1 / Fact(i);
 	 }
 	 return res;
  }
@@ -165,7 +166,7 @@ double f18(int a, int n) {
 	 double res = 0;
 	 for (int i = 0; i <=n; i++)
 	 {
-		 res += pow(x, i) / fact(i);
+		 res += pow(x, i) / Fact(i);
 	 }
 	 return res;
  }
@@ -173,7 +174,7 @@ double f18(int a, int n) {
 	 int res = 0;
 	 for (int i = 0; i <=n ; i+=2)
 	 {
-		 i % 2 == 0 ? res -= std::pow(x, i) / fact(i) : res += std::pow(x, i) / fact(i);
+		 i % 2 == 0 ? res -= std::pow(x, i) / Fact(i) : res += std::pow(x, i) / Fact(i);
 	 }
 	 return res;
  }
@@ -181,7 +182,7 @@ double f18(int a, int n) {
 	 double res = 0;
 	 for   (int i =0;i<=n;++i)
 	 {
-		 res += pow(-1, i) * pow(x, 2 * i) / fact(2 * i);
+		 res += pow(-1, i) * pow(x, 2 * i) / Fact(2 * i);
 	 }
 	 return  res;
  }
@@ -211,9 +212,9 @@ double f18(int a, int n) {
  }
  double f28(double x, int n) {
 	 int res = 0;
-	 for (int i = 0; i <= n; i++)
+	 for (int i = 1; i <= n; i++)
 	 {
-		 res += pow(-1, n - 1) * (2 * n - 3) * pow(x, n) / 2 * n;
+		 res += pow(-1, i- 1) * (2 * i - 3) * pow(x, i) / (2 * i);
 	 }return res;
  }
  double f29( int a, int b,int line) {
@@ -222,7 +223,7 @@ double f18(int a, int n) {
 	 std::cout << h << std::endl;
 	 for (int i = 0; i<line; i++)
 	 {
-		 res = a + i * line;
+		 res = a + i * h;
 	 }
 	 return res;
  }
@@ -236,15 +237,39 @@ double f18(int a, int n) {
 	 }
 	 std::cout << res << std::endl;
  }
- void f31( int n) {
-	 int res = 0;
-	 int a = 2;
-	 for (int i = 1; i<=n; i++)
+ double f31() {
+	 double a = 2;
+	 double n = 2;
+	 for (int i = 1; i <= n; ++i)
 	 {
-		 res = 2 * a + 1 / i;
+		 a = 2 + 1 / a;
 	 }
-	 std::cout << res << std::endl;//?
+	 return a;
  }
+ double for32(int n) {
+	 float ai = 1;
+	 int i;
+	 for (i = 1; i <= n; ++i) {
+		 std::cout << i << " " << (ai + 1) / i << " ";
+		 ai = (ai + 1) / i;
+	 }
+	 return 0;
+ }
+ /*f33*/int Fib(int n) {
+	 if (n == 0)
+		 return 0;
+	 if (n == 1)
+		 return 1;
+	 return Fib(n - 1) + Fib(n - 2); {
+		 for (int i = 0; i < 15; i++)
+		 {
+			 std::cout << Fib(i) << " ";
+		 }
+		 return 0;
+	 }
+ }
+ 
+
  //f32-f35 (?)
  double f36(int n, int k) {
 	 int res = 0;
@@ -288,13 +313,130 @@ double f18(int a, int n) {
 			 std::cout << a + i -1 << std::endl;
 		 }
 	 }
+ }
+ int wh1(int a,int  b) {
+	 while (a > b)
+	 {
+		 a -= b;
+	 }
+	 return a;
+ }
+ double wh2(double a, double b) {
+	 int i = 0;
+	 while (a >= b) {
+		 a -= b;
+		 i++;
+	 }
+	 return i;
+ }
+ void wh3(int n, int k) {
+	 int i = 0;
+	 while (n >= k)
+	 {
+		 n -= k;
+		 ++i;
+	 }
+	 std::cout << i << "\n" << n;
+ }
+ int wh4(int a) {
+	 while (a > 0)
+	 {
+		 a -= 3;
+	 }
+		 if (a == 0)
+			 std::cout << "true";
 
+		 else
+			 std::cout << "false";
+	 
+	 return 0;
+ }
+ int wh5(int  n) {
+	 int k = 1;
+	 for (int i = 2; i < n; ++k) {
+		 i *= 2;
+	 }
+		 return k;
+ }
+ /*dvoynoy factorial*/int doublefact(int n) {
+	 if (n<3) {
+		 return n;
+	 }
+	 {
+		return  n* doublefact(n - 2);
+	 }
+ }
+ int wh7(int n) {
+	 int k = 1;
+	 for (; k * k <= n; ++k)
+	 {
+
+	 }
+		 return k;
+ }
+ int wh8(int n) {
+	 int k = 1;
+	 while (k*k<=n)
+	 {
+		 k++;
+	 }
+	 return k;
  }
 
+ int wh9(int n) {
+	 int k = 1;
+	 while (pow(3,k)<n)
+	 {
+		 ++k;
+	 }
+	 return k;
+ }int wh10(int n) {
+	 int k = 1;
+	 while (pow(3,k)<n)
+	 {
+		 ++k;
+	 }
+	 return k;
+ }
+ int wh11(int n) {
+	 int res = 0, ik;
+	 for (int k = 1; res < n; ++k)
+	 {
+		 res += k;
+		 ik = k;
+	 }
+	 std::cout << res << " ";
+	 return ik;
+ }
 
+ int wh13(int a) {
+	 int res = 0;
+	 int ik = 0;
+	 for (int k = 1; res < a; k++)
+	 {
+		 res += 1/k;
+		 ik = k;
+	 }
+	 std::cout << res << " ";
+	 return ik;
+}
+ double wh15(double p) {
+	 double k = 0;
+	 double s = 1000;
+		while(s<=1100)
+	 {
+			k++;
+		 s += s * p/100;
+	 }
+	 std::cout << s ;
+	 return k;
+ }
+ 
 
  int main()
  {
+	
+
 	 //f1(2, 5);
 	 //f2(1, 4);
 	 //f3(1, 5);
@@ -313,23 +455,37 @@ double f18(int a, int n) {
 	 //std::cout << f16(2, 4) << std::endl;
 	 //std::cout << f17(2, 4) << std::endl;
 	 //std::cout<< f18(2, 4) << std::endl;
-	 /*f19*///std::cout << fact(5) << std::endl;
+	 //std::cout << Fact(5) << std::endl;
 	 //std::cout << f20(4);
 	 //std::cout << f21(3);
-	 //std::cout << f22(3, 2);
-	 //std::cout << f23;
-	 //std::cout << f24(2,5);
+	 //std::cout << f22(2, 3);
+	 //std::cout << f23(2,3);
+	 //std::cout << f24(2,3);
 	 //std::cout << f25(3,3);
 	 //std::cout << f26(2,2);
 	 //std::cout << f27(2, 2);
 	 //std::cout << f28(2, 2);
 	 //std::cout << f29(2, 10, 2) << std::endl;
 	 //f30(2, 10, 2);
-	 //f31(5);
+	 //std::cout << f31();
+	 //std::cout<< f32(2);
 	 //std::cout << f36(2,2);
 	 //std::cout << f37(2);
 	 //std::cout << f38(4);
 	 //f39(1, 3);
 	 //f40(4,6);
-
+	 //std::cout << Fib(6);
+	 //std::cout << wh1(14, 3);
+	 //std::cout << wh2(11, 2);
+	 //wh3(5, 2);
+	 //wh4(6);
+	 //std::cout << wh5(8);
+	 //std::cout << doublefact(7);
+	 //std::cout << wh7(10);
+	 //std::cout << wh9(28);
+	 //std::cout << wh11(5);
+	 //std::cout << wh13(1);
+	 //std::cout << wh15(3);
+	 //std::cout << wh8(5);
+	 //std::cout << wh10(5);
  }
